@@ -1,4 +1,4 @@
-public class Squadra {
+public class Squadra implements ISquadra {
     private String nome;
     private String allenatore;
     private int punti;
@@ -9,14 +9,17 @@ public class Squadra {
         this.punti = punti;
     }
 
+    @Override
     public String getNome() {
         return nome;
     }
 
+    @Override
     public String getAllenatore() {
         return allenatore;
     }
 
+    @Override
     public int getPunti() {
         return punti;
     }
